@@ -23,10 +23,10 @@
         continuación:los ciclistas son personas que utilizan bicicletas 
         para transportarse de un lado a otro.</p>
     
-        <h3>visita el sitio de Nike</h3>
+        <h3>Descarga el Logo de NIKE</h3>
     <a href="images/nike-logo.jpeg"><img src="images/nike-logo.jpeg" alt="" width="50px"></a>
     <br>
-    <h3>Ir al video de ciclismo</h3>
+    <h3>Mira este video emocionante!</h3>
     <a href="https://www.youtube.com/watch?v=4r_FYSFxjxY"><img src="images/youtubelogo.png" width="50px"></a>
     <br>
     <br>
@@ -86,29 +86,29 @@
     <h2>INFORMACION</h2>   
     <table border="1">
            <tr>
-               <th>modelo</th>
-               <th>marca</th>
-               <th>tipo</th>
-               <th>precio</th>
+               <th></th>
+               <th scope="col">modelo</th>
+               <th scope="col">marca</th>
+               <th scope="col">tipo</th>
+               <th scope="col">precio</th>
            </tr>
            
            <tr>
-                <td>electrica</td>
+               <th>Opción 1</th>
+                <td rowspan="3">eléctrica</td>
                 <td>KTM</td>
-                <td>de montaña</td>
+                <td rowspan="3">de montaña</td>
                 <td>$3000</td>
             </tr>
 
             <tr>
-                <td>electrica</td>
+                <th>Opción 2</th>
                 <td>Fiori</td>
-                <td>de montaña</td>
                 <td>$2500</td>
 
             </tr><tr>
-                <td>electrica</td>
+                <th>Opción 3</th>
                 <td>shimano</td>
-                <td>de montaña</td>
                 <td>$2000</td>
             </tr>
        </table>
@@ -135,6 +135,64 @@
         la bicicleta han cambiado poco desde la primera transmisión de cadena
         desarrollada alrededor del año 1885.</p>
 
+<form action="">
+<h2>Regìstrate</h2>
+<fieldset>
+    <legend>DATOS PERSONALES</legend>
+    <h4>* datos obligatorios</h4>
+
+    <label for="nombretext">* Nombre: </label>
+    <input type="text" name="nombre" id="nombre" required> 
+    <label for="apellidotext">* Apellido: </label>
+    <input type="text" name="apellido" id="apellido" required>
+    <br><br>
+    <input type="radio" name="genero">Masculino
+    <input type="radio" name="genero">Femenino
+    <input type="radio" name="genero">Otro
+    <br><br>
+    <label for="fechadate">Fecha de nacimiento: </label>
+    <input type="date" name="fecha" id="fecha" value="today" > 
+    <br><br>
+    <label for="direcciontext">Dirección: </label>
+    <input type="text" name="direccion" id="direccion">
+    <br><br>
+    <label for="ciudadtext">Ciudad: </label>
+    <input type="text" name="ciudad" id="ciudad">
+    <label for="postaltext">Código Postal: </label>
+    <input type="text" name="postal" id="postal">
+    <br><br>
+    <label for="telefonotext">* Número telefónico: </label>
+    <input type="text" name="telefono" id="telefono" required>
+    <br><br>
+    <label for="email">* Correo electrónico: </label>
+    <input type="email" name="email" id="email" required>
+</fieldset>
+
+<Fieldset>
+<legend>OTROS DATOS</legend>
+<h4>Profesión</h4>
+<select name="profesion" id="profesion">
+    <option value="seleccione">Seleccione una opción</option>
+    <option value="universitario">Universitario</option>
+    <option value="tecnico">Técnico</option>
+    <option value="empresario">Empresario</option>
+    <option value="otro">Otro</option>
+</select>
+<h4>¿cuáles son tus hobbies?</h4>
+    <input type="checkbox" name="hoby1">Deportes
+    <input type="checkbox" name="hoby2">Fotografía
+    <input type="checkbox" name="hoby3">Música
+    <input type="checkbox" name="hobby4">Lectura
+    <input type="checkbox" name="hobby5">Outdoors
+    <input type="checkbox" name="hobby6">Otro
+
+</Fieldset>
+<br><br>
+<input type="reset" value="REINICIAR">
+<input type="submit" value="ENVIAR">
+<br><br>
+
+</form>
 
 </body>
 </html>
